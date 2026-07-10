@@ -1,28 +1,2 @@
-# Nama workflow
-name: Belajar CI/CD Pipeline
-
-# Kapan workflow ini dijalankan?
-on:
-  push:
-    branches: [ "main", "develop" ]
-  pull_request:
-    branches: [ "main" ]
-
-# Apa yang harus dikerjakan?
-jobs:
-  contoh-job-pertama:
-    # Menentukan sistem operasi server (runner) yang digunakan
-    runs-on: ubuntu-latest
-    
-    # Langkah-langkah yang akan dieksekusi di dalam job ini
-    steps:
-      - name: Mengambil kode dari repositori (Checkout)
-        uses: actions/checkout@v4
-        
-      - name: Menjalankan perintah terminal sederhana
-        run: echo "Halo! Pipeline CI/CD pertamamu berhasil berjalan."
-
-# Contoh penggunaan schedule: setiap hari jam 1 pagi (UTC)
-# on:
-#   schedule:
-#     - cron: "0 1 * * *"
+# Nama workflow (muncul di UI GitHub)name: Belajar CI/CD Pipeline
+# Kapan workflow ini dijalankan?On:    Push:         branches: [ "main", "develop" ]    Pull_request:         branches: [ "main" ]# Atau schedule: setiap hari jam 1 pagi# on: #   schedule:   #     - cron: "0 1 * * *"
