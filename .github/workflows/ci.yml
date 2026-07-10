@@ -1,2 +1,2 @@
 # Nama workflow (muncul di UI GitHub)name: Belajar CI/CD Pipeline
-# Kapan workflow ini dijalankan?On:    Push:         branches: [ "main", "develop" ]    Pull_request:         branches: [ "main" ]# Atau schedule: setiap hari jam 1 pagi# on: #   schedule:   #     - cron: "0 1 * * *"
+# Kapan workflow ini dijalankan?on:    Push:         branches: [ "main", "develop" ]    Pull_request:         branches: [ "main" ]# Atau schedule: setiap hari jam 1 pagi# on: #   schedule:   #     - cron: "0 1 * * *"
